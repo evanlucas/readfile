@@ -35,11 +35,11 @@ module.exports = function(path, opts, cb) {
 }
 
 function tryToString(buf, encoding, callback) {
-  var e;
+  var e
   try {
-    buf = buf.toString(encoding);
+    buf = buf.toString(encoding)
   } catch (err) {
-    e = err;
+    e = err
   }
-  callback(e, buf);
+  callback(e, buf)
 }
