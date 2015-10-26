@@ -40,6 +40,6 @@ test('throws the same way fs.readFile does', function(t) {
     readfile(__filename, true, function(err) {
 
     })
-  }, new Error('Expected options to be'))
+  })
   t.end()
 })
